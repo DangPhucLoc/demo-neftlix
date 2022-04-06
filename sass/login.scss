@@ -1,0 +1,103 @@
+@import url(../sass/reset.css);
+
+.login {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    z-index: 100;
+    overflow: hidden;
+    position: relative;
+    z-index: -20;
+
+    &__form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+
+        &__left {
+            border-right: 2px solid rgba(241, 241, 241, 0.15);
+
+            a {
+                width: 300px;
+                display: block;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        &__right {
+            color: white;
+            padding-top: 40px;
+            padding-bottom: 15px;
+            padding-left: 70px;
+            margin-left: 40px;
+
+            h3 {
+                font-weight: 400;
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+
+            input {
+                width: 100%;
+                border: 2px solid rgba(241, 241, 241, 0.20);
+                padding: 10px 15px;
+                background-color: transparent;
+                color: #fff;
+                border-radius: 0.25rem;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                outline: none;
+                margin: 10px 0;
+            }
+
+            button {
+                font-family: "Roboto", sans-serif;
+                cursor: pointer;
+                display: inline-block;
+                font-size: 17px;
+                font-weight: 500;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                outline: none;
+                border: 0;
+                color: #fff;
+                border-radius: 3px;
+                background-color: #ffbd3f;
+                padding: 15px 36px;
+                margin-bottom: 10px;
+                width: 100%;
+                -webkit-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+                margin-top: 20px;
+
+                &:hover {
+                    background-color: #db9e2d;
+                    border-color: #db9e2d;
+                }
+            }
+
+        }
+    }
+
+
+
+
+    iframe {
+        position: absolute;
+        filter: blur(15px);
+        -webkit-filter: blur(3px);
+        z-index: -10;
+        transform: scale(1.4);
+    }
+
+}
